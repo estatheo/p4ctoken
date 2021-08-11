@@ -1,0 +1,16 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Context",
+  "sourceName": "contracts/P4C.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220fa699b77d7b1121f79289d4392fd7f8807e801cab1734130e6f7d8e5031d7f8564736f6c63430008040033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220fa699b77d7b1121f79289d4392fd7f8807e801cab1734130e6f7d8e5031d7f8564736f6c63430008040033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
