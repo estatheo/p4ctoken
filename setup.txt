@@ -1,0 +1,9 @@
+To test locally:
+
+use 
+
+npx hardhat node --fork https://eth-mainnet.alchemyapi.io/v2/EEuE0pZat6xbTTuaikFiVaG2iU1SU3en
+
+to test use 
+
+npx hardhat --network localhost test

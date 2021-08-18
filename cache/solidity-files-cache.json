@@ -1,9 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/Theo/Documents/hardhat/contracts/Greeter.sol": {
-      "lastModificationDate": 1628702567101,
-      "contentHash": "aced1af05894ea7316f3a9967e15aca8",
+    "C:\\dev\\p4ctoken\\contracts\\Greeter.sol": {
+      "lastModificationDate": 1629296976779,
+      "contentHash": "113327d72af8f562807f8031f1c8af1f",
       "sourceName": "contracts/Greeter.sol",
       "solcConfig": {
         "version": "0.8.4",
@@ -37,8 +37,8 @@
         "Greeter"
       ]
     },
-    "/Users/Theo/Documents/hardhat/node_modules/hardhat/console.sol": {
-      "lastModificationDate": 1628700441193,
+    "C:\\dev\\p4ctoken\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1629297334317,
       "contentHash": "cc4777addd464ea56fa35b1c45df0591",
       "sourceName": "hardhat/console.sol",
       "solcConfig": {
@@ -71,8 +71,8 @@
         "console"
       ]
     },
-    "/Users/Theo/Documents/hardhat/contracts/IERC20.sol": {
-      "lastModificationDate": 1628704917386,
+    "C:\\dev\\p4ctoken\\contracts\\IERC20.sol": {
+      "lastModificationDate": 1629296976779,
       "contentHash": "a511a1c838e3382005de7f88d1f97a88",
       "sourceName": "contracts/IERC20.sol",
       "solcConfig": {
@@ -105,8 +105,8 @@
         "IERC20"
       ]
     },
-    "/Users/Theo/Documents/hardhat/contracts/P4C-Airdrop.sol": {
-      "lastModificationDate": 1628705744862,
+    "C:\\dev\\p4ctoken\\contracts\\P4C-Airdrop.sol": {
+      "lastModificationDate": 1629296976780,
       "contentHash": "e5c21bcc677294827ebb2ba9ab1ae528",
       "sourceName": "contracts/P4C-Airdrop.sol",
       "solcConfig": {
@@ -142,9 +142,9 @@
         "SafeMath"
       ]
     },
-    "/Users/Theo/Documents/hardhat/contracts/P4C.sol": {
-      "lastModificationDate": 1628706298474,
-      "contentHash": "b0feb9d5339923e46109a8d958c132c1",
+    "C:\\dev\\p4ctoken\\contracts\\P4C.sol": {
+      "lastModificationDate": 1629308522437,
+      "contentHash": "197f46361ef6ae636ddf6448bb4c8c64",
       "sourceName": "contracts/P4C.sol",
       "solcConfig": {
         "version": "0.8.4",
@@ -168,7 +168,9 @@
           }
         }
       },
-      "imports": [],
+      "imports": [
+        "hardhat/console.sol"
+      ],
       "versionPragmas": [
         "^0.8.0"
       ],

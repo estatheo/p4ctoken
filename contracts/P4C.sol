@@ -23,6 +23,8 @@
 
 pragma solidity ^0.8.0;
 
+import 'hardhat/console.sol';
+
 /**
  * Standard SafeMath, stripped down to just add/sub/mul/div
  */
@@ -425,7 +427,7 @@ contract P4C is IERC20, Ownable {
     uint8 constant _decimals = 18;
 
     uint256 _totalSupply = 4000000000000 * (10 ** _decimals);
-    uint256 public _maxTxAmount = _totalSupply / 100; // 1%
+    uint256 public _maxTxAmount = _totalSupply / 20; // 5%
 
     mapping (address => uint256) _balances;
     mapping (address => mapping (address => uint256)) _allowances;
@@ -436,8 +438,8 @@ contract P4C is IERC20, Ownable {
 
     uint256 reflectionFee = 1;
     uint256 liquidFee = 1;
-    uint256 burnFee = 1;
-    uint256 totalFee = 3;
+    uint256 burnFee = 2;
+    uint256 totalFee = 2;
 
     address private autoLiquidityReceiver;
 
@@ -455,7 +457,7 @@ contract P4C is IERC20, Ownable {
     event AutoLiquify(uint256 amountETH, uint256 amount);
 
     constructor (){
-        router = IDEXRouter(address(0));
+        router = IDEXRouter(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D);
         pair = IDEXFactory(router.factory()).createPair(WETH, address(this));
         _allowances[address(this)][address(router)] = type(uint256).max;
 
@@ -551,6 +553,7 @@ contract P4C is IERC20, Ownable {
 
         _balances[address(this)] = _balances[address(this)].add(feeAmount);
         emit Transfer(sender, address(this), feeAmount);
+
         emit Transfer(sender, DEAD, burnAmount);
 
         return amount.sub(feeAmount).sub(burnAmount);
