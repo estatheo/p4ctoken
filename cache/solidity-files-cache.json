@@ -143,8 +143,8 @@
       ]
     },
     "C:\\dev\\p4ctoken\\contracts\\P4C.sol": {
-      "lastModificationDate": 1629308522437,
-      "contentHash": "197f46361ef6ae636ddf6448bb4c8c64",
+      "lastModificationDate": 1629350490765,
+      "contentHash": "3906d604e920a5b2772bc9168efebb22",
       "sourceName": "contracts/P4C.sol",
       "solcConfig": {
         "version": "0.8.4",
@@ -169,22 +169,92 @@
         }
       },
       "imports": [
+        "./token-imports.sol",
         "hardhat/console.sol"
       ],
       "versionPragmas": [
-        "^0.8.0"
+        "^0.8.4"
       ],
       "artifacts": [
+        "BaseRfiToken",
+        "Liquifier",
+        "P4C",
+        "P4CToken",
+        "Presaleable",
+        "Tokenomics"
+      ]
+    },
+    "C:\\dev\\p4ctoken\\contracts\\token-imports.sol": {
+      "lastModificationDate": 1629348596253,
+      "contentHash": "cc555dce79a2af78c4999cc5b398b31f",
+      "sourceName": "contracts/token-imports.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Address",
         "Context",
-        "DividendDistributor",
         "IDEXFactory",
         "IDEXRouter",
-        "IDividendDistributor",
         "IERC20",
+        "IERC20Metadata",
+        "Manageable",
         "Ownable",
-        "P4C",
         "SafeMath"
       ]
+    },
+    "C:\\dev\\p4ctoken\\contracts\\P4COld.sol": {
+      "lastModificationDate": 1629350338308,
+      "contentHash": "3bcc5f12c71b116d9eba0d699ceb8ded",
+      "sourceName": "contracts/P4COld.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
     }
   }
 }
